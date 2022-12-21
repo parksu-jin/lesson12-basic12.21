@@ -1,0 +1,490 @@
+/* 1160 */
+@media screen and (min-width:1160px){
+  article>div{
+    width:1160px;
+  } 
+  header>div{
+    width:1160px;}
+  #box01>ul{
+    width:1160px; }
+}
+@media screen and (min-width:980px) and (max-width:1159px){
+  #box01>ul{
+    width:100%;
+    margin-left:-50%;
+  }
+}
+/* 980 : 42 */
+@media screen and (min-width:580px) and (max-width:979px){
+  /*  */
+  article h3{
+    font-size:53px;
+    margin-bottom:32px;
+  }
+  /*  */
+  header{
+    padding:28px 0;
+  }
+  header>div{
+    width:100%;
+    display:block;
+  }
+  header>div>h1{text-align:center;}
+  header>div>h1>a{
+    font-size:35px;
+  }
+  nav{
+    position:fixed;
+    left:0px; top:0;
+    width:400px;
+    height:100%;
+    background-color:rgba(21, 2, 23, 0.9);
+    padding-top:25vh;
+    box-sizing:border-box;
+  }
+  nav>ul{
+    width:80%;
+    margin: 0 auto;
+    border-top:1px solid #fff;
+  }
+  nav>ul>li{
+    margin-left:0;
+    display:block;
+    border-bottom:1px solid #fff;
+    text-align:center;
+  }
+  nav>ul>li>a{
+    font-size:20px;
+    line-height:12.5vh;
+ 
+  }
+  nav .close{
+    display:block;
+  }
+  #box01{
+  background-size:auto 100%;
+  }
+  #box01>h3{
+    top:23.31vh;
+    font-size:65px;
+  }
+  #box01>ul{
+    width:100%;
+    bottom:9.99vh;
+    /* bottom:14.5%; */
+    left:0;
+    margin-left:0;
+  }
+  #box01>ul>li{
+    width:33.33333vw;
+  }
+  #box01>ul>li>span{
+    width:26.64vw;
+    height:26.64vw;
+
+  }
+  #box01>ul>li>dl{
+    width:26.64vw;
+  }
+/* box02 */
+#box02 section.info{
+  margin-bottom:100px;
+  display:block;
+}
+#box02 section.info>h4{
+width:33.3333vw/* 317px */;
+padding-left: 0;
+margin: 0 auto 25px;
+}
+#box02 section.info>ul{
+  width:59.994vw;
+  margin: 0 auto;
+  background-color: pink;
+  }
+  #box02 section.info>ul>li{
+    padding-left: 0;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #box02 section.info>ul>li>dfn{
+    width: 16.65vw;
+    position:static;
+  }
+  #box02 section.info>ul>li>span{
+    width: 43.344vw;
+    display:block;
+  }
+  /* skill */
+  #box02 section.skill{
+    display:flex;
+  }
+  #box02 section.skill>h4{
+    display: none;}
+  #box02 section.skill>ul{
+    width:79.92vw;
+    margin-bottom:0;
+    margin: 0 auto;
+  }
+  #box02 section.skill>ul>li{
+    padding-left:148px;
+  }
+  #box02 section.skill>ul>li>dfn{
+    display:block;
+    width:148px;
+      }
+/* box03 */
+#box03{
+  margin-bottom: 70px;
+}
+#gallery{
+  width: 100vw;
+  position: relative;
+}
+p.prev{display:block;}
+p.next{display:block;}
+
+#show{
+  width: 73.26vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#all{
+  /* 36.63 곱하기 6 */
+  width: 219.78vw;
+  /* display:flex;
+  flex-wrap:wrap; */
+}
+#all>figure{
+  width:36.63vw;
+  margin-bottom:0;
+  text-align: center;
+}
+#all>figure>img{
+  width:29.97vw;
+}
+#submenu{
+  display: none;
+}
+#top{
+  display: none;
+}
+/* box04 */
+form{
+  width: 93.24vw;
+  margin: 0 auto;
+  padding-right:0;
+}
+form ul>li>label{
+  padding-left:0;
+  background: none;
+  text-indent: 30px;
+}
+form ul>li:nth-child(2)>label{
+  background-image:none;
+}
+form ul>li:nth-child(3)>label{
+  background-image:none;
+}
+form ul>li:nth-child(4)>label{
+  background-image:none;
+}
+form p>input{
+  width:100%;
+  border-radius: 0px;
+  height:40px;
+}
+/*  */
+}
+/* 580 */
+@media screen and (max-width:579px){
+/* 공통부분 */
+  article{
+    padding:50px 0;
+  }
+  article>div{
+    width:90vw;
+    margin: 0 auto;
+  }
+  article h3{
+    font-size:32px;
+    text-align:left;
+    margin-bottom:28px;
+  }
+
+  /* header */
+header{
+  background-color: #110115;
+}
+header>div{
+  width: 90vw;
+  display: block;
+}
+header>div>h1{
+  text-align: center;
+}
+/* nav */
+nav{
+  position: fixed;
+  left: -100%; top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: #110115c7;
+  z-index: 1100;
+  padding-top: 25vh;
+  box-sizing: border-box;
+}
+nav>ul{
+  width: 70vw;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+}
+nav>ul>li{
+  margin-left:0;
+  display:block;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+nav>ul>li>a{
+  font-size:20px;
+  color:#fff;
+  line-height: 12.5vh;
+  display: block;
+}
+nav .close{
+  display:block;
+  /* position:absolute;
+  right:35px; top:35px;
+  width:35px; height:35px;
+  background-color:red; */
+}
+/* btn */
+header>p.btn{
+  display:flex;
+}
+header>p.btn>span{
+  display:block;
+  height:2px;
+  width:100%;
+  background-color:#fff;
+}
+/* box01 */
+#box01{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box01>h3{
+  position:static;
+  text-align:center;
+  margin-bottom: 0;
+  font-size: 56px;
+  padding: 0 20px;
+  /* box-sizing: border-box; */
+}
+#box01>ul{
+ display: none;
+}
+/* box02 */
+#box02 section.info{
+  margin-bottom:30px;
+  display:block;
+}
+#box02 section.info>h4{
+width:40vw;
+padding-left: 0;
+margin: 0 auto 30px;
+}
+#box02 section.info>ul{
+  width:80vw;
+  margin: 0 auto;
+  }
+  #box02 section.info>ul>li{
+    padding-left:0;
+    position: relative;
+    line-height: 30px;
+    background-color: #fff;
+  }
+  #box02 section.info>ul>li>dfn{
+    width: auto;
+    position: static;
+    font-weight: bold;
+  }
+  #box02 section.info>ul>li>span{
+ display: block;
+ border-bottom: 1px solid #666;
+ margin-bottom: 20px;
+ padding-left: 5vw;
+  }
+  /* skill */
+  #box02 section.skill{
+    display:block;
+  }
+  #box02 section.skill>h4{
+    display: none;}
+  #box02 section.skill>ul{
+    width:80vw;
+    margin-bottom:0;
+    margin: 0 auto;
+  }
+  #box02 section.skill>ul>li{
+    padding-left:148px;
+  }
+  #box02 section.skill>ul>li>dfn{
+    display:block;
+      }
+/* box03 */
+#box03{
+  padding-bottom: 50px;
+}
+#box03>h3{
+  width: 90vw;
+  margin: 0 auto 28px;
+}
+#gallery{
+width: 100%;
+position: relative;
+}
+p.prev{display:block;
+top: 30vw;}
+p.next{display:block;
+  top: 30vw;}
+
+#show{
+  width: 60vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#all{
+  width: 360vw;
+}
+#all>figure{
+  width:60vw;
+  margin-bottom:0;
+}
+#all>figure>img{
+  width:100%;
+  border-radius: 0%;
+}   
+/* aside */
+#submenu{
+  display: none;
+}
+#top{
+  display: none;
+}
+/*  */
+form{
+  width: 80vw;
+  padding-right: 0;
+  margin: 0 auto;
+}
+form ul>li{
+  margin-bottom: 34px;
+  padding-left: 0;
+  position: relative;
+}
+form ul>li>label{
+  color: red;
+  display:block;
+  left:30px;
+  padding-left:0;
+  background:none;
+}
+form ul>li:nth-child(2)>label{
+  background-image:none;
+}
+form ul>li:nth-child(3)>label{
+  background-image:none;
+}
+form ul>li:nth-child(4)>label{
+  background-image:none;
+}
+form p>input{
+  width:100%;
+  border-radius: 0px;
+  height:40px;
+}
+/*  */
+}
+/*  */
+@media screen and (max-width:980px){
+  #modal{
+    display: none;
+    /* display: block; */
+    padding: 6.66vh 5vw 3.33vh;
+    box-sizing: border-box;
+  }
+  #modal>.close{
+    position: absolute;
+    width: 5vw; height: 5vw;
+    right: 2.5vw; top: 1.665vh;
+    background-color: red;
+    }
+    #modal>section{
+      position: static;
+      width: auto;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    #modal>section>h4{
+      font-size: 6.66vh;
+      line-height: 1;
+      margin-bottom: 3.33vh;
+    }
+    #modal>section>div{
+      display: block;
+    }
+    #modal>section>div>figure{
+      width: auto;
+      height: 43.29vh;
+      overflow: hidden;
+      margin-bottom: 3.33vh;
+    }
+    #modal>section>div>figure>figcaption{
+      display: none;
+    }
+    #modal>section>div>dl{
+      position: absolute;
+      width:80vw;
+      margin: 0 auto;
+      bottom: 6.66vh;
+      left:10vw ;
+      background-color: pink;
+    }
+    #modal>section>div>dl>dt{
+      clear: none;
+      float: none;
+      width: auto;
+      font-size: 1.5vh;
+      margin-bottom: 1.83vh;
+      font-weight: bold;
+    }
+    #modal>section>div>dl>dd{
+    float: none;
+    width: auto;
+    border-bottom: 1px solid #aaa;
+    font-size: 1.665vh;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    /* line-height: 4.995vh; */
+    /* margin-bottom: 1.665vh;
+    padding-bottom: 1.665vh; */
+    
+
+    }
+
+
+
+
+
+
+
+
+
+
+/*  */
+  }
+
