@@ -1,3 +1,74 @@
+import $ from 'jquery'
+
+$(function(){
+  // 연결됐는지 확인하기
+  // $('body').css('background-color','red')
+
+  let windowW = $(window).width()
+  if(windowW >= 1160){
+    nav()
+    submenu()
+  }else if(windowW < 1159 && windowW >= 980){
+    nav()
+    submenu()
+  }else if(windowW < 979 && windowW >= 580){
+    tNav()
+  }else if(windowW < 579){
+    tNav()
+  }
+
+  // 공동부분
+
+
+  // reset부분
+
+})
+// web용
+function nav(){
+  $('nav li>a').on('click',function(e){
+    const navA = $(this).attr('href')
+    const aPos = $(navA).offset().top
+    const headerHeight = $('header').innerHeight()
+    $('html,body').animate({scrollTop:aPos-headerHeight},800)
+    return false
+  })
+}
+// tablet, mobile용
+function tNav(){
+  let navW = $('nav').width()
+  // .btn click
+  $('header .btn').on('click',function(e){
+    $(this).hide()
+    $('nav').animate({left:0},400)
+   })
+
+
+  // scroll
+$('nav li>a').on('click',function(e){
+  const navA = $(this).attr('href')
+    const aPos = $(navA).offset().top
+    const headerHeight = $('header').innerHeight()
+    $('html,body').animate({scrollTop:aPos-headerHeight},800)
+$('nav').css('left','-'+navW+'px')
+$('header .btn').show()
+
+    return false
+})
+
+  // .close
+$('nav .close').on('click',function(e){
+  $('nav').css('left','-'+navW+'px')
+})
+}
+
+function submenu(){
+  
+  // html 정리
+  // jquery 연결
+}
+
+
+
 console.log('welcome')
 // DOM object
 const h4 = document.querySelector('#modal h4')

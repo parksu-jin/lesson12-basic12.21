@@ -33,6 +33,7 @@
   header>div>h1>a{
     font-size:35px;
   }
+
   nav{
     position:fixed;
     left:0px; top:0;
@@ -161,7 +162,7 @@ p.next{display:block;}
   text-align: center;
 }
 #all>figure>img{
-  width:29.97vw;
+  width:29.9vw;
 }
 #submenu{
   display: none;
@@ -178,7 +179,7 @@ form{
 form ul>li>label{
   padding-left:0;
   background: none;
-  text-indent: 30px;
+  /* text-indent: 30px; */
 }
 form ul>li:nth-child(2)>label{
   background-image:none;
@@ -192,7 +193,7 @@ form ul>li:nth-child(4)>label{
 form p>input{
   width:100%;
   border-radius: 0px;
-  height:40px;
+  /* height:40px; */
 }
 /*  */
 }
