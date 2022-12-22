@@ -5,6 +5,7 @@ $(function(){
   // $('body').css('background-color','red')
 
   let windowW = $(window).width()
+  // console.log(windowW)
   if(windowW >= 1160){
     nav()
     submenu()
@@ -13,14 +14,18 @@ $(function(){
     submenu()
   }else if(windowW < 979 && windowW >= 580){
     tNav()
+    gallery()
   }else if(windowW < 579){
     tNav()
+    gallery()
+    formData()
   }
 
-  // 공동부분
-
-
-  // reset부분
+  // 공통부분
+  // reset부분 : 포트폴리오 때문에 사용(실무에서는 잘 사용안함)
+  $(window).on('resize',function(e){
+    window.location.reload();
+  })
 
 })
 // web용
@@ -62,9 +67,51 @@ $('nav .close').on('click',function(e){
 }
 
 function submenu(){
-  
-  // html 정리
-  // jquery 연결
+  $('aside li>a').on('click',function(e){
+    const asideA = $(this).attr('href')
+    const asidePos = $(asideA).offset().top
+    const headerTop = $('header').innerHeight()
+    $('html,body').animate({scrollTop:asidePos-headerTop})
+    return false
+  })
+}
+// gallery함수
+function gallery(){
+  // 준비하기
+const figureW = $('#box03 #all figure').width()
+$('#all figure:last').prependTo('#all')
+$('#all').css('margin-left','-'+figureW+'px')
+
+// 이벤트 2개 만들기
+$('#gallery .prev').on('click',function(e){
+  $('#all').animate({marginLeft:'-='+figureW+'px'},400,function(){
+    $('#all figure:first').appendTo('#all')
+    $('#all').css('margin-left','-'+figureW+'px')
+  })
+})
+
+$('#gallery .next').on('click',function(e){
+  $('#all').animate({marginLeft:'+='+figureW+'px'},400,function(){
+    $('#all figure:last').prependTo('#all')
+    $('#all').css('margin-left','-'+figureW+'px')
+  })
+})
+}
+function formData(){
+const $liForm = $('#box04 li>input,#box04 li>textarea')
+$liForm.removeAttr('placeholder')
+
+  $liForm.on('focus',function(e){
+    $(this).prev('label').fadeOut(300)
+
+    })
+  $liForm.on('blur',function(e){
+
+    let str = $(this).val()
+    if(str === ''){
+      $(this).prev('label').fadeIn(300)
+    }
+  })
 }
 
 
